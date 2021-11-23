@@ -10,6 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UBSLifestyleMobile">
         <activity
+            android:name=".DetailProductActivity"
+            android:exported="false"
+            android:label="@string/title_activity_detail_product"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.UBSLifestyleMobile.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ProductReaderActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
